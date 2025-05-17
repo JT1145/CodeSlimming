@@ -1,0 +1,36 @@
+{
+    "activationEvents": ["onView:csb"],
+    "publisher": "ArrowJT",
+    "name": "code-slimming",
+    "displayName": "code-slimming",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "main": "/extension.js",
+    "contributes": {
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "csc",
+                    "title": "csc",
+                    "icon": "cs.png"
+                }
+
+            ]
+        },
+        "views": {
+            "csc": [
+                {
+                    "id": "csb",
+                    "name": "csb"
+                    
+                }
+            ]
+
+        },
+        "commands":[
+            {"command": "code slimming","title": "cs"}
+        ]
+    }
+}
